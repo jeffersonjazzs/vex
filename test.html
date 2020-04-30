@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display a confirm box.</p>
+
+<button onclick="myFunction()">JAVASCRIPT</button>
+</br>
+</br><p>Test Alert Javascript and Vex</p>
+
+
+<button onclick="alertvex()">VEX</button>
+
+<script src="vex.combined.min.js"></script>
+<script>vex.defaultOptions.className = 'vex-theme-top'</script>
+<link rel="stylesheet" href="vex.css" />
+<link rel="stylesheet" href="vex-theme-top.css" />
+
+<script>
+function myFunction() {
+  confirm("Hello Javascript!!");
+}
+
+function alertvex() {
+vex.dialog.alert({ unsafeMessage: '<b>Hello VEX!</b>' })
+
+}
+</script>
+
+</body>
+</html>
